@@ -1,7 +1,7 @@
 /*
 Lane Jones-Popp
 Computer Science Fall 2024
-Oct. 22
+Oct. 29
 Lab 4, Hourly temp star chart
 In this lab we are meant to Write a C++ code that can input hourly  temperatures
 and output them into a bar chart using a set of stars. First difficult lab I
@@ -75,5 +75,6 @@ int main()
 			inFile >> numx;
 		}
 	}
+
 	return 0;
 }
