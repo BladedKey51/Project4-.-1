@@ -13,7 +13,7 @@ Have been told.
 #include "BarchartH.h"
 int main()
 {
-	BarchartH loop(-33);  // Initialize with the value of -33. Precondition that sets where the bar starts
+	BarchartH loop(-36);  // Initialize with the value of -36. Precondition that sets where the bar starts
 	loop.runLoop();           // Run the loop 
 
 	int i; // values for inFile while loop
