@@ -13,7 +13,7 @@ Have been told.
 #include "BarchartH.h"
 int main()
 {
-	BarchartH loop(-33);  // Initialize with the value of -33. Precondtion that sets where the bar starts
+	BarchartH loop(-33);  // Initialize with the value of -33. Precondition that sets where the bar starts
 	loop.runLoop();           // Run the loop 
 
 	int i; // values for inFile while loop
@@ -21,9 +21,9 @@ int main()
 	int d = 0;
 
 	std::ifstream inFile; // opens file that has temp values within
-	inFile.open("inHTempstd.dat");
-	float numx; // varible for my infile numbers
-	inFile >> numx;
+	inFile.open("inHTempstd.dat"); // inHTempstd.dat holds temp inputs
+	float numx; // variable for my infile numbers
+	inFile >> numx; // initializes first infile variable
 
 	while (inFile)
 	{
@@ -34,7 +34,7 @@ int main()
 			{
 				d -= 3;
 			}
-			if (d == -3) // sets the lenght based off precondtion and sets numx to the left of the screen
+			if (d == -3) // sets the lenght based off precondtion and sets numx to the left of the screen.
 			{
 				std::cout << std::left << std::setw(Rdivide + 16) << numx << std::right; //Rdivivde + 16 is the post condition that sets the widith
 			}
@@ -56,12 +56,12 @@ int main()
 				std::cout << std::left << std::setw(16) << numx << std::right << "|";
 				i = +3;
 			}
-			if ((i - 1) <= numx) // adds star
+			if ((i - 1) <= numx) // adds star 
 			{
 				std::cout << "*";
 				i += 3;
 			}
-			else // ends the line and moves to the next number in the file
+			else // ends the line and moves to the next number in the file once infile varaible is less than varaible i
 			{
 				std::cout << "" << std::endl;
 				i = 0;
@@ -75,6 +75,5 @@ int main()
 			inFile >> numx;
 		}
 	}
-
 	return 0;
 }
